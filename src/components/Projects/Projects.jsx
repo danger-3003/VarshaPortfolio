@@ -14,6 +14,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import GenAiTools from '../../assets/projects/genaitools.svg';
 import Eltoro from '../../assets/projects/eltoro.svg';
 import RIH from '../../assets/projects/rih.svg';
+import Portfolio from '../../assets/projects/portfolio.svg';
 
 function Projects() {
     return (
@@ -47,7 +48,7 @@ function Projects() {
                             bgColor="from-[#8000ffa0] via-[#8000ffa0]"
                             buttonColor="bg-[#5D1480] text-white"
                             textColor="text-black"
-                            headingColor="text-[#5D1480]"
+                            headingColor="text-[#420e5a]"
                         />
                     </SwiperSlide>
                     <SwiperSlide className="flex items-center justify-center">
@@ -79,23 +80,12 @@ function Projects() {
                             heading="Gen AI Tools"
                             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam commodi inventore vero, consequatur mollitia."
                             link=""
-                            image={GenAiTools}
-                            bgColor="from-[#8000ffa0] via-[#8000ffa0]"
-                            buttonColor="bg-[#5D1480] text-white"
-                            textColor="text-black"
-                            headingColor="text-[#5D1480]"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide className="flex items-center justify-center">
-                    <SliderCard 
-                            heading="Result Insight Hub"
-                            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam commodi inventore vero, consequatur mollitia."
-                            link=""
-                            image={RIH}
-                            bgColor="from-[#6a79ffce] via-[#6a79ffce]"
-                            buttonColor="bg-[#111b7c] text-white"
-                            textColor="text-black"
-                            headingColor="text-[#000a5f]"
+                            image={Portfolio}
+                            bgColor="from-slate-300 via-slate-300"
+                            buttonColor="bg-black text-white"
+                            textColor="text-slate-900"
+                            headingColor="text-slate-900"
+                            className="bg-slate-700"
                         />
                     </SwiperSlide>
                 </Swiper>
