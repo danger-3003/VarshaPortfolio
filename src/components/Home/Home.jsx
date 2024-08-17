@@ -2,7 +2,7 @@ import { Cursor,useTypewriter } from "react-simple-typewriter";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {Link,useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import {useRef,  useEffect} from "react";
 import About from "../About/About";
 import Resume from "../../assets/Hima Varsha - Resume.pdf";
@@ -34,9 +34,9 @@ function Home()
                     <p className="text-[1rem] sm:text-2xl">{text}<Cursor>|</Cursor></p>
                 </div> 
                 <div className="mt-5">
-                    <FontAwesomeIcon className="text-xl md:text-2xl mx-3 my-2" icon={faGithub} />
-                    <FontAwesomeIcon className="text-xl md:text-2xl mx-3 my-2" icon={faLinkedin} />
-                    <FontAwesomeIcon className="text-xl md:text-2xl mx-3 my-2" icon={faEnvelope} />
+                    <a href="https://github.com/varsha-0228" target="_blank"><FontAwesomeIcon className="text-xl md:text-2xl mx-3 my-2" icon={faGithub} /></a>
+                    <a href="https://www.linkedin.com/in/hima-varsha-barla" target="_blank"><FontAwesomeIcon className="text-xl md:text-2xl mx-3 my-2" icon={faLinkedin} /></a>
+                    <a href="mailto:varshahima46@gmail.com"><FontAwesomeIcon className="text-xl md:text-2xl mx-3 my-2" icon={faEnvelope} /></a>
                 </div>
                 <div>
                     <Link to="/projects" className="mx-1 sm:mx-2">

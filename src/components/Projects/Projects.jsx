@@ -52,19 +52,19 @@ function Projects() {
                         />
                     </SwiperSlide>
                     <SwiperSlide className="flex items-center justify-center">
-                    <SliderCard 
+                        <SliderCard 
                             heading="Eltoro"
                             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam commodi inventore vero, consequatur mollitia."
                             link=""
                             image={Eltoro}
                             bgColor="from-[#ffec40c0] via-[#ffec40c0]"
-                            buttonColor="bg-[#CD7B00] text-white"
+                            buttonColor="bg-amber-900 text-white"
                             textColor="text-ember-950"
                             headingColor="text-amber-900"
                         />
                     </SwiperSlide>
                     <SwiperSlide className="flex items-center justify-center">
-                    <SliderCard 
+                        <SliderCard 
                             heading="Result Insight Hub"
                             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam commodi inventore vero, consequatur mollitia."
                             link=""
@@ -76,8 +76,8 @@ function Projects() {
                         />
                     </SwiperSlide>
                     <SwiperSlide className="flex items-center justify-center">
-                    <SliderCard 
-                            heading="Gen AI Tools"
+                        <SliderCard 
+                            heading="Portfolio"
                             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam commodi inventore vero, consequatur mollitia."
                             link=""
                             image={Portfolio}
