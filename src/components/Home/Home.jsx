@@ -3,21 +3,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {Link, useLocation} from "react-router-dom";
-import {useRef,  useEffect} from "react";
+import {useRef,  useEffect, useState} from "react";
 import About from "../About/About";
 import Resume from "../../assets/Hima Varsha - Resume.pdf";
 import Quotation from "./Quotation";
+import Loader from "../../assets/loader.svg";
 
 function Home()
 {
     const location=useLocation();
     const HomeSection=useRef(null);
+    const [loader,setLoader] = useState(true);
     useEffect(()=>{
         if(location.hash==="#home" && HomeSection.current)
         {
             HomeSection.current.scrollIntoView({behavior:"smooth"});
         }
     },[location])
+    useEffect(()=>{
+        setTimeout(() => {
+            setLoader(false);
+        }, 1500);
+    })
     const [text] = useTypewriter(
     {
         words:['Web Developer','UI/UX Designer'],
@@ -57,6 +64,12 @@ function Home()
             </div>
             <Quotation />
             <About />
+            {   
+                loader && 
+                <div className="fixed z-[20] top-0 flex items-center justify-center h-screen w-full bg-white">
+                    <img src={Loader} alt="Loader" className="w-[10rem]" />
+                </div>
+            }
         </>
     );
 }

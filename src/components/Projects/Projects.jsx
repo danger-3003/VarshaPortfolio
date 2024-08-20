@@ -1,6 +1,8 @@
 import SliderCard from "./SliderCard";
 import FeatureProjects from "./FeatureProjects/FeatureProjects";
 import "./Swiper.css";
+import Loader from "../../assets/loader.svg";
+import { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -17,6 +19,12 @@ import RIH from '../../assets/projects/rih.svg';
 import Portfolio from '../../assets/projects/portfolio.svg';
 
 function Projects() {
+    const [loader,setLoader] = useState(true);
+    useEffect(()=>{
+        setTimeout(() => {
+            setLoader(false);
+        }, 1500);
+    })
     return (
         <>
             <div className="pt-14 w-full h-full shadow-[#00000048] shadow-md">
@@ -42,7 +50,7 @@ function Projects() {
                     <SwiperSlide className="flex items-center justify-center">
                         <SliderCard 
                             heading="Gen AI Tools"
-                            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam commodi inventore vero, consequatur mollitia."
+                            content="GenAI Tools offers a range of AI-powered tools through a user-friendly website, making cutting-edge technology accessible to all. Our goal is to simplify complex tasks and enhance user experience with intuitive and effective solutions."
                             link=""
                             image={GenAiTools}
                             bgColor="from-[#8000ffa0] via-[#8000ffa0]"
@@ -54,7 +62,7 @@ function Projects() {
                     <SwiperSlide className="flex items-center justify-center">
                         <SliderCard 
                             heading="Eltoro"
-                            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam commodi inventore vero, consequatur mollitia."
+                            content="This restaurant website design prioritizes user-friendliness and easy navigation. Visitors can seamlessly browse menus, make reservations, and explore offerings with a smooth and enjoyable experience."
                             link=""
                             image={Eltoro}
                             bgColor="from-[#ffec40c0] via-[#ffec40c0]"
@@ -66,7 +74,7 @@ function Projects() {
                     <SwiperSlide className="flex items-center justify-center">
                         <SliderCard 
                             heading="Result Insight Hub"
-                            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam commodi inventore vero, consequatur mollitia."
+                            content="This project provides a comprehensive visual analysis of student marks through interactive graphs, offering detailed insights into performance across separate semester."
                             link=""
                             image={RIH}
                             bgColor="from-[#6a79ffce] via-[#6a79ffce]"
@@ -78,7 +86,7 @@ function Projects() {
                     <SwiperSlide className="flex items-center justify-center">
                         <SliderCard 
                             heading="Portfolio"
-                            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam commodi inventore vero, consequatur mollitia."
+                            content="A simple and easy-to-navigate portfolio highlighting my projects, skills, and experiences, providing a comprehensive overview of my work and accomplishments."
                             link=""
                             image={Portfolio}
                             bgColor="from-slate-300 via-slate-300"
@@ -93,6 +101,12 @@ function Projects() {
             <div className="h-max w-full py-10">
                 <FeatureProjects />
             </div>
+            {   
+                loader && 
+                <div className="fixed z-[20] top-0 flex items-center justify-center h-screen w-full bg-white">
+                    <img src={Loader} alt="Loader" className="w-[10rem]" />
+                </div>
+            }
         </>
     );
 }
