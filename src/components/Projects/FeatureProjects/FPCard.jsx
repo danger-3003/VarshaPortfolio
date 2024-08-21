@@ -1,8 +1,12 @@
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
 function FPCard(props)
 {
+    AOS.init();
     return(
         <>
-            <div className="flex items-center justify-center flex-col w-72 border-[0.12rem] border-black rounded-xl hover:scale-105 hover:shadow-xl shadow-sm shadow-black transition-all duration-300 m-5">
+            <div data-aos="fade-up" data-aos-duration={props.duration} className="flex items-center justify-center flex-col w-72 border-[0.12rem] border-black rounded-xl hover:scale-105 hover:shadow-xl shadow-sm shadow-black transition-all duration-300 m-5">
                 <div className="w-[80%] relative">
                     <img src={props.image} width={500} height={400} alt="cards image" />
                 </div>

@@ -14,26 +14,28 @@ function Skills()
     return(
         <>
             <div className="flex justify-center items-center flex-col my-14 sm:my-10">
-                <Marquee autoFill gradient gradientColor="white" gradientWidth={100} className="h-20 md:my-2 w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[60vw]">
-                    <SkillsCard Name="Canva" Image={Canva} text="" bgcolor=""/>
-                    <SkillsCard Name="CSS3" Image={CSS} text="" bgcolor="bg-[#8AA4FF]"/>
-                    <SkillsCard Name="Figma" Image={Figma} text="text-white" bgcolor="bg-[#000000]"/>
-                    <SkillsCard Name="Firebase" Image={Firebase} text="text-white" bgcolor="bg-[#305CDE]"/>
-                    <SkillsCard Name="Git" Image={Git} text="text-white" bgcolor="bg-[#000000]"/>
-                    <SkillsCard Name="HTML5" Image={HTML} text="" bgcolor="bg-[#FFC093]"/>
-                    <SkillsCard Name="Tailwind CSS" Image={Tailwind} text="text-white" bgcolor="bg-[#003769]"/>
-                    <SkillsCard Name="Wordpress" Image={Wordpress} text="" bgcolor=""/>
-                </Marquee>
-                <Marquee autoFill direction="right" gradient gradientColor="white" gradientWidth={100} className="h-20 md:my-2 w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[60vw]">
-                    <SkillsCard Name="Git" Image={Git} text="text-white" bgcolor="bg-[#000000]"/>
-                    <SkillsCard Name="HTML5" Image={HTML} text="" bgcolor="bg-[#FFC093]"/>
-                    <SkillsCard Name="Tailwind CSS" Image={Tailwind} text="text-white" bgcolor="bg-[#003769]"/>
-                    <SkillsCard Name="Wordpress" Image={Wordpress} text="" bgcolor=""/>
-                    <SkillsCard Name="Canva" Image={Canva} text="" bgcolor=""/>
-                    <SkillsCard Name="CSS3" Image={CSS} text="" bgcolor="bg-[#8AA4FF]"/>
-                    <SkillsCard Name="Figma" Image={Figma} text="text-white" bgcolor="bg-[#000000]"/>
-                    <SkillsCard Name="Firebase" Image={Firebase} text="text-white" bgcolor="bg-[#305CDE]"/>
-                </Marquee>
+                <div className="w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[60vw]">
+                    <Marquee autoFill gradient gradientColor="white" gradientWidth={100} className="h-20 md:my-2">
+                        <SkillsCard Name="Canva" Image={Canva} text="" bgcolor=""/>
+                        <SkillsCard Name="CSS3" Image={CSS} text="" bgcolor="bg-[#8AA4FF]"/>
+                        <SkillsCard Name="Figma" Image={Figma} text="text-white" bgcolor="bg-[#000000]"/>
+                        <SkillsCard Name="Firebase" Image={Firebase} text="text-white" bgcolor="bg-[#305CDE]"/>
+                        <SkillsCard Name="Git" Image={Git} text="text-white" bgcolor="bg-[#000000]"/>
+                        <SkillsCard Name="HTML5" Image={HTML} text="" bgcolor="bg-[#FFC093]"/>
+                        <SkillsCard Name="Tailwind CSS" Image={Tailwind} text="text-white" bgcolor="bg-[#003769]"/>
+                        <SkillsCard Name="Wordpress" Image={Wordpress} text="" bgcolor=""/>
+                    </Marquee>
+                    <Marquee autoFill direction="right" gradient gradientColor="white" gradientWidth={100} className="h-20 md:my-2">
+                        <SkillsCard Name="Git" Image={Git} text="text-white" bgcolor="bg-[#000000]"/>
+                        <SkillsCard Name="HTML5" Image={HTML} text="" bgcolor="bg-[#FFC093]"/>
+                        <SkillsCard Name="Tailwind CSS" Image={Tailwind} text="text-white" bgcolor="bg-[#003769]"/>
+                        <SkillsCard Name="Wordpress" Image={Wordpress} text="" bgcolor=""/>
+                        <SkillsCard Name="Canva" Image={Canva} text="" bgcolor=""/>
+                        <SkillsCard Name="CSS3" Image={CSS} text="" bgcolor="bg-[#8AA4FF]"/>
+                        <SkillsCard Name="Figma" Image={Figma} text="text-white" bgcolor="bg-[#000000]"/>
+                        <SkillsCard Name="Firebase" Image={Firebase} text="text-white" bgcolor="bg-[#305CDE]"/>
+                    </Marquee>
+                </div>
             </div>
         </>
     );
