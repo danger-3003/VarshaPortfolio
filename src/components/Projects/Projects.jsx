@@ -1,7 +1,8 @@
 import SliderCard from "./SliderCard";
 import FeatureProjects from "./FeatureProjects/FeatureProjects";
 import "./Swiper.css";
-import Loader from "../../assets/loader.svg";
+import "../Loader/loader.css";
+// import Loader from "../../assets/loader.svg";
 import { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -104,7 +105,7 @@ function Projects() {
             {   
                 loader && 
                 <div className="fixed z-[20] top-0 flex items-center justify-center h-screen w-full bg-white">
-                    <img src={Loader} alt="Loader" className="w-[10rem]" />
+                    <div className="loader"></div>
                 </div>
             }
         </>

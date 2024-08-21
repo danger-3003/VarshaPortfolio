@@ -7,7 +7,8 @@ import {useRef,  useEffect, useState} from "react";
 import About from "../About/About";
 import Resume from "../../assets/Hima Varsha - Resume.pdf";
 import Quotation from "./Quotation";
-import Loader from "../../assets/loader.svg";
+// import Loader from "../../assets/loader.svg";
+import "../Loader/loader.css";
 
 function Home()
 {
@@ -67,7 +68,7 @@ function Home()
             {   
                 loader && 
                 <div className="fixed z-[20] top-0 flex items-center justify-center h-screen w-full bg-white">
-                    <img src={Loader} alt="Loader" className="w-[10rem]" />
+                    <div className="loader"></div>
                 </div>
             }
         </>
