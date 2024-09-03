@@ -3,9 +3,6 @@ import { useLocation } from "react-router-dom";
 import Me from "./Me";
 import Skills from "./Skills";
 import WhatIdoCard from "./WhatIdoCard";
-import Designing from "../../assets/designingCard.svg";
-import Research from "../../assets/researchCard.svg";
-import Testing from "../../assets/testingCard.svg";
 
 function About() {
     const location = useLocation();
@@ -31,21 +28,21 @@ function About() {
                     </p>
                     <div className="flex items-center justify-center flex-wrap">
                         <WhatIdoCard
-                            Image={Designing}
+                            Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/designingCard.svg'}
                             Heading="Designing"
                             Height="h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-48"
                             bgcolor="bg-gradient-to-bl from-[#f008f4c5] to-[#760effbb]"
                             Content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto repudiandae quis? Ad, commodi eaque."
                         />
                         <WhatIdoCard
-                            Image={Research}
+                            Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/researchCard.svg'}
                             Heading="Research"
                             Height="h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-56"
                             bgcolor="bg-gradient-to-b from-[#f008f4c5] to-[#760effbb]"
                             Content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto repudiandae quis? Ad, commodi eaque."
                         />
                         <WhatIdoCard
-                            Image={Testing}
+                            Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/testingCard.svg'}
                             Heading="Testing"
                             Height="h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-48"
                             bgcolor="bg-gradient-to-br from-[#f008f4c5] to-[#760effbb]"

@@ -54,7 +54,7 @@ function Projects() {
                             heading="Gen AI Tools"
                             content="GenAI Tools offers a range of AI-powered tools through a user-friendly website, making cutting-edge technology accessible to all. Our goal is to simplify complex tasks and enhance user experience with intuitive and effective solutions."
                             link=""
-                            image={GenAiTools}
+                            image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/projects/genaitools.svg'}
                             bgColor="from-[#8000ffa0] via-[#8000ffa0]"
                             buttonColor="bg-[#5D1480] text-white"
                             textColor="text-black"
@@ -66,7 +66,7 @@ function Projects() {
                             heading="Eltoro"
                             content="This restaurant website design prioritizes user-friendliness and easy navigation. Visitors can seamlessly browse menus, make reservations, and explore offerings with a smooth and enjoyable experience."
                             link=""
-                            image={Eltoro}
+                            image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/projects/eltoro.svg'}
                             bgColor="from-[#ffec40c0] via-[#ffec40c0]"
                             buttonColor="bg-amber-900 text-white"
                             textColor="text-ember-950"
@@ -78,7 +78,7 @@ function Projects() {
                             heading="Result Insight Hub"
                             content="This project provides a comprehensive visual analysis of student marks through interactive graphs, offering detailed insights into performance across separate semester."
                             link=""
-                            image={RIH}
+                            image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/projects/rih.svg'}
                             bgColor="from-[#6a79ffce] via-[#6a79ffce]"
                             buttonColor="bg-[#111b7c] text-white"
                             textColor="text-black"
@@ -90,7 +90,7 @@ function Projects() {
                             heading="Portfolio"
                             content="A simple and easy-to-navigate portfolio highlighting my projects, skills, and experiences, providing a comprehensive overview of my work and accomplishments."
                             link=""
-                            image={Portfolio}
+                            image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/projects/portfolio.svg'}
                             bgColor="from-slate-300 via-slate-300"
                             buttonColor="bg-black text-white"
                             textColor="text-slate-900"

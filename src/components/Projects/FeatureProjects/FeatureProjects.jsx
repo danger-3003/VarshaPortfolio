@@ -1,13 +1,4 @@
 import FPCard from "./FPCard";
-import RIH from "../../../assets/projects/rih.svg";
-import Portfolio from "../../../assets/projects/portfolio.svg";
-import Genaitools from "../../../assets/projects/genaitools.svg";
-import CoffeeApp from "../../../assets/designs/coffeeApp.svg";
-import EmailTemplate from "../../../assets/designs/emailTemplate.svg";
-import LibriHub from "../../../assets/designs/libriHub.svg";
-import MenuCard from "../../../assets/designs/menuCard.svg";
-import Shopify from "../../../assets/designs/shopify.svg";
-import SumanthPort from "../../../assets/designs/sumanthPortfolio.svg";
 
 function FeatureProjects()
 {
@@ -19,7 +10,7 @@ function FeatureProjects()
                 </div>
                 <div className="flex items-center justify-center flex-wrap">
                     <FPCard 
-                        image={MenuCard}
+                        image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/designs/menuCard.svg'}
                         heading="Menu Card"
                         content="Created an interactive menu design for a coffee shop app using Figma, with easy-to-navigate layout that enhances the user experience."
                         link=""
@@ -29,7 +20,7 @@ function FeatureProjects()
                         button="bg-[#571A00] text-white"
                     />
                     <FPCard 
-                        image={RIH}
+                        image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/projects/rih.svg'}
                         heading="Result Insight Hub"
                         content="Crafted an interface in Figma, providing a clear and concise visual representation of student performance data."
                         link=""
@@ -39,7 +30,7 @@ function FeatureProjects()
                         button="bg-[#080061] text-white"
                     />
                     <FPCard 
-                        image={EmailTemplate}
+                        image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/designs/emailTemplate.svg'}
                         heading="Email Template"
                         content="Crafted a clean and modern email template for a coffee shop app using Figma, featuring a simple and visually appealing design."
                         link=""
@@ -49,7 +40,7 @@ function FeatureProjects()
                         button="bg-[#571A00] text-white"
                     />
                     <FPCard 
-                        image={LibriHub}
+                        image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/designs/libriHub.svg'}
                         heading="Libri Hub"
                         content="Created a systematic and user-friendly design for Libri Hub using Figma, providing a simple and intuitive experience."
                         link=""
@@ -59,7 +50,7 @@ function FeatureProjects()
                         button="bg-indigo-900 text-white"
                     />
                     <FPCard 
-                        image={CoffeeApp}
+                        image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/designs/coffeeApp.svg'}
                         heading="Coffee App Design"
                         content="Designed user-friendly login and signup pages for a mobile coffee app, providing a seamless and intuitive experience for customers."
                         link=""
@@ -69,7 +60,7 @@ function FeatureProjects()
                         button="bg-[#571A00] text-white"
                     />
                     <FPCard 
-                        image={Shopify}
+                        image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/designs/shopify.svg'}
                         heading="Shopify"
                         content="Designed a visually appealing Shopify e-commerce website using Figma, featuring high-quality images and a simple, user-friendly layout"
                         link=""
@@ -79,7 +70,7 @@ function FeatureProjects()
                         button="bg-[#571A00] text-white"
                     />
                     <FPCard 
-                        image={SumanthPort}
+                        image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/designs/sumanthPortfolio.svg'}
                         heading="Friend's Portfolio Design"
                         content="Designed a professional and interactive portfolio for my friend, highlighting his projects with detailed descriptions, vibrant visuals."
                         link=""
@@ -89,7 +80,7 @@ function FeatureProjects()
                         button="bg-black text-white"
                     />
                     <FPCard 
-                        image={Portfolio}
+                        image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/projects/portfolio.svg'}
                         heading="My portfolio"
                         content="Designed a professional portfolio, providing in-depth insights into my projects through user-friendly layouts and detailed descriptions."
                         link=""
@@ -99,7 +90,7 @@ function FeatureProjects()
                         button="bg-black text-white"
                     />
                     <FPCard 
-                        image={Genaitools}
+                        image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/projects/genaitools.svg'}
                         heading="GenAITools"
                         content="Designed visually stunning interface in Figma, leveraging a deliberate selection of colors and typography to create a seamless experience"
                         link=""
