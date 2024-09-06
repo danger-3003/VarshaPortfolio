@@ -32,21 +32,21 @@ function About() {
                             Heading="Designing"
                             Height="h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-48"
                             bgcolor="bg-gradient-to-bl from-[#f008f4c5] to-[#760effbb]"
-                            Content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto repudiandae quis? Ad, commodi eaque."
+                            Content="Design simple and user-friendly interfaces that focus on improving user experiences"
                         />
                         <WhatIdoCard
                             Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/researchCard.svg'}
                             Heading="Research"
                             Height="h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-56"
                             bgcolor="bg-gradient-to-b from-[#f008f4c5] to-[#760effbb]"
-                            Content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto repudiandae quis? Ad, commodi eaque."
+                            Content="Conduct research across different domains to improve user experiences, ensuring designs are functional and engaging."
                         />
                         <WhatIdoCard
                             Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/testingCard.svg'}
                             Heading="Testing"
                             Height="h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-48"
                             bgcolor="bg-gradient-to-br from-[#f008f4c5] to-[#760effbb]"
-                            Content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto repudiandae quis? Ad, commodi eaque."
+                            Content="Design and test user-friendly interfaces, focusing on understanding user experiences and interests."
                         />
                     </div>
                 </div>
