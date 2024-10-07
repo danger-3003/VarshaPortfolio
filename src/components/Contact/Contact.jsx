@@ -11,7 +11,9 @@ import mail from "../../assets/contact/envelope.svg";
 import linkedIn from "../../assets/contact/linkedin.svg";
 import phone from "../../assets/contact/phone-alt.svg";
 import AOS from 'aos';
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
+import swal from 'sweetalert';
+import emailjs from '@emailjs/browser';
 
 function Contact()
 {
@@ -24,6 +26,10 @@ function Contact()
         e.preventDefault();
         console.log(formData);
         setFormData({...formData,name:"",email:"",message:""});
+        emailjs.send("service_varsha","template_338b1dk",formData,"PQ1t7Tsmpe6lFP3YR")
+        .then((res)=>{console.log(res);})
+        .catch((err)=>{console.log(err);});
+        swal("Your response has been sent","Thankyou for contacting Hima Varsha","success");
     }
 
     useEffect(()=>{
@@ -66,13 +72,13 @@ function Contact()
                 <div className="relative flex items-center justify-center flex-col sm:flex-row w-full mb-10 z-[3]">
                     <form data-aos="fade-up" data-aos-duration="800" className="w-[80%] sm:w-[40%] md:w-[35%] mx-5" onSubmit={handleSubmit}>
                         <div>
-                            <input type="text" name="name" value={formData.name} placeholder="Name" className="shadow-md mt-4 w-full outline-none px-3 py-1 rounded-md border-b-purple-700 border-2 text-slate-500 text-base md:text-lg shadow-slate-300" onInput={(text)=>{setFormData({...formData,name:text.target.value})}}/>
+                            <input type="text" required name="name" value={formData.name} placeholder="Name" className="shadow-md mt-4 w-full outline-none px-3 py-1 rounded-md border-b-purple-700 border-2 text-slate-500 text-base md:text-lg shadow-slate-300" onInput={(text)=>{setFormData({...formData,name:text.target.value})}}/>
                         </div>
                         <div>
-                            <input type="email" name="emial" value={formData.email} placeholder="Email" className="shadow-md mt-4 w-full outline-none px-3 py-1 rounded-md border-b-purple-700 border-2 text-slate-500 text-base md:text-lg shadow-slate-300" onInput={(text)=>{setFormData({...formData,email:text.target.value})}}/>
+                            <input type="email" required name="emial" value={formData.email} placeholder="Email" className="shadow-md mt-4 w-full outline-none px-3 py-1 rounded-md border-b-purple-700 border-2 text-slate-500 text-base md:text-lg shadow-slate-300" onInput={(text)=>{setFormData({...formData,email:text.target.value})}}/>
                         </div>
                         <div>
-                            <textarea name="message" value={formData.message} placeholder="Your Message" className="shadow-md mt-4 w-full outline-none px-3 py-1 rounded-md border-b-purple-700 border-2 text-slate-500 text-base md:text-lg shadow-slate-300" onInput={(text)=>{setFormData({...formData,message:text.target.value})}}/>
+                            <textarea name="message" required value={formData.message} placeholder="Your Message" className="shadow-md mt-4 w-full outline-none px-3 py-1 rounded-md border-b-purple-700 border-2 text-slate-500 text-base md:text-lg shadow-slate-300" onInput={(text)=>{setFormData({...formData,message:text.target.value})}}/>
                         </div>
                         <button type="submit" className="bg-gradient-to-r from-[#7F34F9] to-[#AD00FF] w-full mt-8 rounded-sm text-white py-1">Submit</button>
                     </form>
