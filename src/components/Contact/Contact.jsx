@@ -64,7 +64,7 @@ function Contact()
                     <img src={designCard} className="absolute w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 top-14 left-[20%]" alt="designCard"/>
                 </div>
                 <div className="relative flex items-center justify-center flex-col sm:flex-row w-full mb-10 z-[3]">
-                    <form data-aos="fade-up;" data-aos-duration="800" className="w-[80%] sm:w-[40%] md:w-[35%] mx-5" onSubmit={handleSubmit}>
+                    <form data-aos="fade-up" data-aos-duration="800" className="w-[80%] sm:w-[40%] md:w-[35%] mx-5" onSubmit={handleSubmit}>
                         <div>
                             <input type="text" name="name" value={formData.name} placeholder="Name" className="shadow-md mt-4 w-full outline-none px-3 py-1 rounded-md border-b-purple-700 border-2 text-slate-500 text-base md:text-lg shadow-slate-300" onInput={(text)=>{setFormData({...formData,name:text.target.value})}}/>
                         </div>
