@@ -1,5 +1,5 @@
-import lg_image from "../../assets/QuotationSection.svg";
-import md_image from "../../assets/QuotationSection.jpg";
+import lg_image from "../../assets/quotation/QuotationSection.svg";
+import md_image from "../../assets/quotation/QuotationSection.jpg";
 // import AOS from "aos";
 // import 'aos/dist/aos.css';
 

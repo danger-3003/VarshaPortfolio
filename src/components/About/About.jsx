@@ -28,21 +28,21 @@ function About() {
                     </p>
                     <div className="flex items-center justify-center flex-wrap">
                         <WhatIdoCard
-                            Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/designingCard.svg'}
+                            Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/profile/designingCard.svg'}
                             Heading="Designing"
                             Height="h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-48"
                             bgcolor="bg-gradient-to-bl from-[#f008f4c5] to-[#760effbb]"
                             Content="Design simple and user-friendly interfaces that focus on improving user experiences"
                         />
                         <WhatIdoCard
-                            Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/researchCard.svg'}
+                            Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/profile/researchCard.svg'}
                             Heading="Research"
                             Height="h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-56"
                             bgcolor="bg-gradient-to-b from-[#f008f4c5] to-[#760effbb]"
                             Content="Conduct research across different domains to improve user experiences, ensuring designs are functional and engaging."
                         />
                         <WhatIdoCard
-                            Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/testingCard.svg'}
+                            Image={'https://danger-3003.github.io/VarshaPortfolio/src/assets/profile/testingCard.svg'}
                             Heading="Testing"
                             Height="h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-48"
                             bgcolor="bg-gradient-to-br from-[#f008f4c5] to-[#760effbb]"

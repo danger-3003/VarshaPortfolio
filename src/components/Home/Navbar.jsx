@@ -36,7 +36,7 @@ function Navbar()
                     <li className="my-2 sm:my-0 mx-3"><Link to="/#home" onClick={button_clicked}>Home</Link></li>
                     <li className="my-2 sm:my-0 mx-3"><Link to="/#about" onClick={button_clicked}>About</Link></li>
                     <li className="my-2 sm:my-0 mx-3"><Link to="/projects" onClick={button_clicked}>Projects</Link></li>
-                    {/* <li className="my-2 sm:my-0 mx-3"><Link to="/contact" onClick={button_clicked}>Contact</Link></li> */}
+                    <li className="my-2 sm:my-0 mx-3"><Link to="/#contact" onClick={button_clicked}>Contact</Link></li>
                 </ul>
             </div>
         </>

@@ -5,9 +5,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {Link, useLocation} from "react-router-dom";
 import {useRef,  useEffect, useState} from "react";
 import About from "../About/About";
-import Resume from "../../assets/Hima Varsha - Resume.pdf";
+import Resume from "../../assets/profile/Hima Varsha - Resume.pdf";
 import Quotation from "./Quotation";
-// import Loader from "../../assets/loader.svg";
+import Contact from "../Contact/Contact";
 import "../Loader/loader.css";
 
 function Home()
@@ -65,6 +65,7 @@ function Home()
             </div>
             <Quotation />
             <About />
+            <Contact />
             {   
                 loader && 
                 <div className="fixed z-[20] top-0 flex items-center justify-center h-screen w-full bg-white">

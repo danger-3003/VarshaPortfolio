@@ -13,7 +13,7 @@ function Me()
                     <a href="mailto:varshahima46@gmail.com" className="font-semibold">varshahima46@gmail.com</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" className="w-[50vw] sm:w-[30vw] lg:basis-[30%] mb-10 sm:mb-0 sm:mx-3 lg:mx-5">
-                    <img src={'https://danger-3003.github.io/VarshaPortfolio/src/assets/profile.svg'} alt="Profile photo" className="w-full"/>
+                    <img width={200} src={'https://danger-3003.github.io/VarshaPortfolio/src/assets/profile/profile.svg'} alt="Profile photo" className="w-full"/>
                 </div>
             </div>
         </>
