@@ -13,7 +13,7 @@ function IndividualWorkPage({ project }) {
         >
           <div className='flex items-start justify-center flex-col gap-7 lg:gap-10 pt-6'>
             <div
-              data-aos="fade-up"
+              data-aos="fade-right"
               className={`flex items-center justify-center w-full rounded-lg sm:rounded-xl lg:rounded-2xl ${project.bg} `}
             >
               <img src={project.img} alt={project.heading} className="w-full max-w-[40rem]" />

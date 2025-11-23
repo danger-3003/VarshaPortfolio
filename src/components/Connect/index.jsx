@@ -3,6 +3,8 @@
 import React, { useState } from 'react'
 import Input from '../ui/Input'
 import BlurText from '../ui/Animation/Texts/BlurText'
+import IconButton from '../ui/Button/IconButton';
+import LinkButton from '../ui/Button/LinkButton';
 
 function ConnectPage() {
 
@@ -27,21 +29,21 @@ function ConnectPage() {
     <>
       <div className="flex flex-col items-center justify-center w-screen">
         <div
-          className="max-w-[70rem] w-full max-h-[600px] h-screen flex items-center justify-start pb-12 pt-20 md:py-24 px-5 sm:px-8 md:px-10"
+          className="max-w-[70rem] w-full max-h-[800px] sm:max-h-[700px] h-screen flex items-center justify-start pb-12 pt-20 md:py-24 px-5 sm:px-8 md:px-10"
         >
-          <div className='flex items-start justify-between flex-wrap w-full'>
-            <div className='w-40'>
+          <div className='flex items-center md:items-start justify-between flex-col md:flex-row w-full gap-20'>
+            <div className='w-full md:w-40 text-center md:text-left'>
               <BlurText
                 text={"Let's collaborate together!"}
                 delay={30}
                 animateBy="words"
                 direction="bottom"
                 onAnimationComplete={null}
-                className="text-[3.5rem] font-nunito font-semibold w-full uppercase leading-[4rem]"
+                className="text-4xl sm:text-5xl md:text-[3.5rem] font-nunito font-semibold w-full uppercase leading-[4rem]"
               />
             </div>
-            <div className='basis-1/2 flex items-center justify-center'>
-              <form onSubmit={e => handleFormSubmit(e)} className='font-nunito text-sm sm:text-base font-light flex items-center justify-center flex-col gap-4'>
+            <div className='max-w-80 w-full md:basis-1/2 flex items-center md:justify-end lg:justify-center'>
+              <form onSubmit={e => handleFormSubmit(e)} className='font-nunito text-sm sm:text-base font-light flex items-center justify-center flex-col gap-4 w-full md:w-min'>
                 <div className='w-full'>
                   <Input
                     id={"full_name"}
@@ -86,7 +88,13 @@ function ConnectPage() {
                     required={true}
                   />
                 </div>
-                <button type="submit">Submit</button>
+                <button
+                  type='submit'
+                >
+                  <LinkButton
+                    text={"Submit"}
+                  />
+                </button>
               </form>
             </div>
           </div>
