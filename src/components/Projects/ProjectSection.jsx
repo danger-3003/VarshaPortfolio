@@ -60,8 +60,8 @@ function ProjectSection({ index, projectItem }) {
       {/* Background overlay */}
       <div
         className={`
-          bg-overlay w-full h-full absolute z-[2] duration-500 transition-all
-          ${isVisible ? "opacity-100 scale-125" : "opacity-0"}
+          bg-overlay w-full h-full absolute z-[2] custom-transition
+          ${isVisible ? "opacity-100 scale-110" : "opacity-0"}
           lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:scale-110
         `}
         style={{

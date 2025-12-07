@@ -63,9 +63,9 @@ export const ProjectsInfo = [
       },
       icons: {
         icon: [
-          { url: "/assets/icons/faviocn.ico.jpg" },
-          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
-          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+          { url: "/assets/icons/favicom.png" },
+          { url: "/assets/icons/favicom.png", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/favicom.png", sizes: "16x16", type: "image/png" },
         ],
         apple: [
           { url: "/assets/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
@@ -130,9 +130,9 @@ export const ProjectsInfo = [
       },
       icons: {
         icon: [
-          { url: "/assets/icons/faviocn.ico.jpg" },
-          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
-          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+          { url: "/assets/icons/favicom.png" },
+          { url: "/assets/icons/favicom.png", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/favicom.png", sizes: "16x16", type: "image/png" },
         ],
         apple: [
           { url: "/assets/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
@@ -198,9 +198,9 @@ export const ProjectsInfo = [
       },
       icons: {
         icon: [
-          { url: "/assets/icons/faviocn.ico.jpg" },
-          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
-          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+          { url: "/assets/icons/favicom.png" },
+          { url: "/assets/icons/favicom.png", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/favicom.png", sizes: "16x16", type: "image/png" },
         ],
         apple: [
           { url: "/assets/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
@@ -266,9 +266,9 @@ export const ProjectsInfo = [
       },
       icons: {
         icon: [
-          { url: "/assets/icons/faviocn.ico.jpg" },
-          { url: "/assets/icons/faviocn.ico.jpg", sizes: "32x32", type: "image/png" },
-          { url: "/assets/icons/faviocn.ico.jpg", sizes: "16x16", type: "image/png" },
+          { url: "/assets/icons/favicom.png" },
+          { url: "/assets/icons/favicom.png", sizes: "32x32", type: "image/png" },
+          { url: "/assets/icons/favicom.png", sizes: "16x16", type: "image/png" },
         ],
         apple: [
           { url: "/assets/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
