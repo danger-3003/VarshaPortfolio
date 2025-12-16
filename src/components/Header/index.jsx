@@ -5,7 +5,7 @@ import Quotation from "./Quotation";
 function Header() {
   return (
     <>
-      <div className="relative z-[5] bg-background">
+      <div className="relative z-[5]">
         <Quotation />
       </div>
     </>

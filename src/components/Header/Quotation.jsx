@@ -40,22 +40,9 @@ export default function Quotation() {
     <>
       <div id="homeSection" className="w-full"></div>
       <section className="h-dvh flex items-center justify-center flex-col relative overflow-hidden w-full will-change-transform">
-        <div className="absolute w-screen h-screen z-[1]">
-          <Particles
-            particleColors={defaultColors}
-            particleCount={150}
-            particleSpread={10}
-            speed={0.1}
-            particleBaseSize={70}
-            moveParticlesOnHover={true}
-            alphaParticles={false}
-            disableRotation={false}
-            cameraDistance={30}
-          />
-        </div>
         {/* This inner wrapper stays constant */}
-        <div className="absolute flex items-center justify-center w-full max-w-[70rem]">
-          <div className="h-dvh w-full relative flex items-center justify-center flex-col px-5 sm:px-8 md:px-10 bg-background">
+        <div className="absolute flex items-center justify-center w-full max-w-[70rem] z-[1]">
+          <div className="h-dvh w-full relative flex items-center justify-center flex-col px-5 sm:px-8 md:px-10">
             <div className="text-center">
               <Text data-aos="fade-up" className="text-xl sm:text-2xl md:text-3xl font-semibold text-text custom-transition">
                 Hi There!
@@ -114,6 +101,19 @@ export default function Quotation() {
             <p>Scroll For More</p>
             <ArrowDown width={14} className="-mt-0.5 ml-0.5" />
           </div>
+        </div>
+        <div className="absolute w-screen h-screen">
+          <Particles
+            particleColors={defaultColors}
+            particleCount={150}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={70}
+            moveParticlesOnHover={true}
+            alphaParticles={false}
+            disableRotation={false}
+            cameraDistance={30}
+          />
         </div>
       </section>
     </>
