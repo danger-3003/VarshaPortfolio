@@ -29,7 +29,7 @@ function AboutSection() {
               </Text>
             </div>
             <div className='sm:basis-[35%] lg:basis-1/3 w-full flex items-center justify-center'>
-              <img src="/assets/profile/Varsha.png" alt="Profile" className='w-[85%] sm:w-[70%] max-w-96 md:w-full lg:w-[90%]' />
+              <img src="/assets/profile/Varsha.png" alt="Profile" className='w-[85%] sm:w-[70%] max-w-96 md:w-full' />
             </div>
           </div>
           <div className='border-l-2 pl-1.5 py-5 mt-10 border-black dark:border-white text-primary-400 flex items-start justify-start flex-col gap-2 w-full sm:w-[65%] lg:w-2/3 custom-transition overflow-hidden'>
